@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* variable */
+
+:root{
+    --warna-utama:#181942;
+    --warna-kedua:#8667F2;
+    --warna-font:#FFFFFF;
+    --warna-button:#E6606C;
+
+    /* shadow box dan navbar */
+    --shadow-navbar:#181942;
+    --shadwobox: #5D48A3;
+}
+
+body{
+    background: var(--warna-utama);
+}
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #E6606C;
+    border-radius: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.5s;
+    z-index: 1000;
+}
+header.sticky{
+    background: #3A3B73;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .Logo{
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+header .Logo span{
+    color: #E6606C;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+    position: center;
+    font-weight: 700;
+
+}
+header ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+header ul li a:hover{
+    background: var(--warna-button);
+    color: #FFFFFF;
+}
+/* button search */
+
+.middle{
+    position: relative;
+    height: 20px;
+}
+
+.middle .input{
+    background-color: #FFFFFF;
+    border: 0;
+    font-size: 16px;
+    padding: none;
+    height: 20px;
+    width: none;
+    transition: width 0.3s ease;
+}
+
+.btnn{
+    background-color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* home banner */
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg span{
+    color: #E6606C;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+.banner .bg .content h3{
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.banner .bg .sakura{
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-size: 3em;
+}
+.banner .bg .sakura span{
+    color: #E6606C;
+}
+.banner .bg .kesayangan{
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+.banner .bg .content p{
+    font-size:1em;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid var(--warna-button);
+    background-color: #E6606C;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.banner .bg .content a:hover{
+    background: var(--warna-kedua);
+    border: none;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px var(--warna-button);
+}
+.banner .bg img{
+    width: 65%;
+    
+}
+
+/* about */
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .contentbx{
+    width: 50%;
+    margin: 20px;
+}
+.about .contentbx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.about .contentbx p{
+    max-width: 600px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+.about .contentbx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid var(--warna-button);
+    background-color: #E6606C;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.about .contentbx a:hover{
+    background: var(--warna-kedua);
+    border: none;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px var(--warna-button);
+}
+
+.about .contentbx img{
+    width: 65%;
+    
+}
+
+
+/* Flash sale */
+.games{
+    padding: 0px 100px;
+    width: 50%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.games h1{
+    color: white;
+    margin: 65px 0;
+    background-color: red;
+    border-radius: 5px;
+    list-style: none;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.games ul li.active{
+    background-color: #E6606C;
+    color: white;
+    box-shadow: 0 0 10px var(--shadow-navbar);
+}
+.games .cardBx{
+    width: 50;
+    min-height: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.games .cardBx .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px ;
+    background: var(--warna-kedua);
+    overflow: hidden;
+}
+.games .cardBx .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.games .cardBx .card{
+    padding: 10px;
+}
+.games .cardBx .card .content h4{
+    color: var(--warna-font);
+    margin: 15px 0;
+}
+.games .cardBx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #3A3B73;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.games .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: var(--warna-button);
+    box-shadow: 0 0 10px var(--shadwobox);
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.games .cardBx .card .info{
+    border-top: 2px solid var(--shadwobox);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.games .cardBx .card .info p{
+    font-size: 1em;
+    color: #FFFFFF;
+}
+.games .cardBx .card .info p span{
+    color: white;
+}
+.games .cardBx .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid var(--warna-button);
+    background-color: #E6606C;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.games .cardBx .card .info a:hover{
+    background: red;
+    border: none;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px var(--warna-button);
+}
+.games .cardBx .card.hide{
+    display: none;
+}
+
+/* Comunity start */
+
+/* .tournaments{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tournaments h2{
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+.tournaments .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tournaments .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.tournaments .boxBx .box img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.tournaments .boxBx .box h4{
+    color: white;
+    margin-top: 15px;
+}
+.tournaments .boxBx .box .content h4 span{
+    color: #E6606C;
+}
+.tournaments .boxBx .box .content p{
+    text-align: justify;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+.tournaments .boxBx .box .content .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.tournaments .boxBx .box .content .Join-Now{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid var(--warna-button);
+    background: #E6606C;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #181942;
+}
+.games .cardBx .card .info a:hover{
+    border: 1px solid var(--warna-kedua);
+    color: #FFFFFF;
+    box-shadow: 0 0 10px var(--warna-button);
+
+} */
+
+/* community ends */
+
+/* Contact us Start */
+.contact{
+    padding: 10% 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contact .form{
+    width: 50%;
+    margin: 30px;
+}
+.contact .form h1{
+    color: #FFFFFF;
+}
+.contact .form .inputBx{
+    margin: 30px 0;
+}
+.contact .form .inputBx p{
+    color: #FFFFFF;
+}
+.contact .form .inputBx input,
+.contact .form .inputBx textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: #000000;
+    background: #FFFFFF;
+    font-size: 1.1em;
+}
+.contact .form .inputBx textarea{
+    height: 150px;
+}
+.contact .form .inputBx input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid var(--warna-kedua);
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius:5px;
+    color: #FFFFFF;
+
+}
+.contact .form .inputBx input[type="submit"]:hover{
+    background: #E6606C;
+    border: none;
+    color: #FFFFFF;
+    box-shadow: var(--shadow-navbar);
+}
+
+/* contact us end*/
+
+/* footer */
+footer{
+    padding: 10px 100px;
+}
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info .logo{
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .info .logo span{
+    color: var(--warna-button);
+}
+footer .info p{
+    color: #FFFFFF;
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--warna-button);
+}
+footer .info ul li:hover{
+    background: #E6606C;
+    border: none;
+    box-shadow: 0 0 10px var(--warna-button);
+}
+footer .info ul li a i{
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+footer .info ul li:hover a i{
+    color: var(--warna-utama);
+}
+
+.animeX{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animeX.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* responsive design */
+
+@media (max-width: 900px)
+{
+    header
+    {
+        padding: 15px 40px;
+    }
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--warna-utama);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    header .nav.active{
+        display: flex;
+    }
+    header .nav li{
+        margin: 20px 0;
+    }
+    header .nav li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .togglemenu{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: url(menu-btn.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .togglemenu.active{
+        background: url(close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+    .banner .bg img{
+        position: absolute;
+    }
+    .banner .bg .content {
+        width: 100%;
+        height: 100%;
+        background: rgb(51 52 122 / 50%);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentbx {
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .games .cardBx{
+        width: auto;
+        min-height: auto;
+        flex-wrap: wrap;
+    }
+    .banner .bg img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarakura Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="app.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">Sarakura <span>Store</span></a>
+        <ul class="nav">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- button search start-->
+
+        <div class="action">
+            <div class="middle">
+                <form action=""class="search-box">
+                    <input type="text" class="input" placeholder="Search Game">
+                <button class="btnn">
+                    <i class="fas fa-search"></i>
+                </button>
+                </form>
+            </div>
+        </div>
+        <div class="togglemenu" onclick="togglemenu();"></div>
+
+        <!-- button search end -->
+
+    </header>
+
+    <!-- banner start-->
+
+    <div class="banner animeX" id="Home">
+        <div class="bg">
+            <div class="content">
+                <h3>Halo, Selamat datang <span>Naveeda</span></h3>
+                    <h2 class="kesayangan"> Topup Game Kesayangan kamu di</h2>
+                    <h2 class="sakura">SARAKURA <span>STORE</span></h2>
+                    <p>Proses Cepat,Murah,Legal & Terpercaya</p>
+                    <a href="#" class="btn">EXPLORE NOW</a>
+            </div>
+            <img src="asset/image hp/fenrir.png">
+        </div>
+    </div>
+
+    <!-- banner end -->
+
+        <!-- Games start-->
+
+        <div class="games animeX">
+            <h1>Flash Sale</h1>
+            <ul>
+                <li class="list "data-filter="all">Best Sale</li>
+                <li class="list active"data-filter="gem">Games</li>
+                <li class="list "data-filter="vocer">Voucher</li>
+            </ul>
+            <div class="cardBx">
+                <div class="card" data-item="vocer">
+                    <img src="asset/flash sale/images.jpeg">
+                    <div class="content">
+                        <h4>Genshin impact</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>Rp 33.000</span></p>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="gem">
+                    <img src="asset/flash sale/toF1.png">
+                    <div class="content">
+                        <h4>Tower of Fantasy</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>Rp 70.000</span></p>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="gem">
+                    <img src="asset/flash sale/vaL.png">
+                    <div class="content">
+                        <h4>Valorant</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>Rp 115.000</span></p>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- games end -->
+
+             <!-- comunitty -->
+
+     <div class="tournaments">
+    <h2>Community</h2>
+      <div class="boxBx">
+        <div class="box">
+            <img src="asset/image hp/sarakura 1.png">
+            <div class="content">
+                <h4><span>50</span> Matches in progress..</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam numquam, molestias labore quas a quam quo reprehenderit
+                </p>
+                <div class="btn">
+                    <a href="https://discord.gg/DF2vfYb7UY" class="Join-Now">Join Now</a>
+                </div>
+            </div>
+        </div>
+        </div>
+     </div>
+     
+     <!-- community end -->
+
+    <!-- About  start-->
+
+    <div class="about animeX" id="About">
+        <div class="contentbx">
+            <h2>About Us</h2>
+            <p>Top Up Game & Voucher game Prosess cepat,Terpercaya,Legal 100% dan juga murah.Nikmati Prodcut berkualitas serta jasa Lainnya Kapanpun, dimanapun. kami memiliki nama untuk kamu (buyer) yang di sebut "Naveed" Yang artinya "Permintaan yang Mulia". keren gak tuh? FYI kata "Naveed" berasal dari bahasa Sansekerta. Kami berdiri Dari 2022 Pelayanan Fast response dan Real testimoni. Kami juga memiliki komunitas Gamers, jika kalian ingin bergabung komunitas kami , silahkan join discord yang tersedia Link dibawah dengan isi member yang asik-asik , kalian bisa mabar bareng juga disana karena kita memiliki banyak member discord Ayo join Discord Sarakura Naveeda Server sekarang!</p>
+            <a href="https://discord.gg/DF2vfYb7UY">Join Community</a>
+        </div>
+        <img src="asset/image hp/sarakura 1.png">
+    </div>
+
+     <!-- about end  -->
+
+     <!-- contact -->
+     <div class="contact animeX" id="contact">
+        <img src="asset/comunity/cu.jpg">
+        <div class="form">
+            <h1>Contact us</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="text" placeholder="email">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea placeholder="Type here..."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="Submit">
+            </div>
+        </div>
+     </div>
+
+     <!-- footer start -->
+
+     <footer>
+        <div class="info">
+            <a href="#Home" class="logo">Sarakura <span>Store</span></a>
+            <p><i class='bx bx-copyright' ></i> 2022 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://www.instagram.com/sarakura.store/"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
+                <li><a href="#"><i class='bx bxl-tiktok'></i></a></li>
+            </ul>
+        </div>
+     </footer>
+     <!-- footer end -->
+
+    <script>
+
+        /* Sticky Navbar start */
+
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+
+        // responsive navbar
+        function togglemenu(){
+            const togglemenu = document.querySelector('togglemenu');
+            const nav = document.querySelector('.nav');
+            togglemenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+        // scrolling animation effect
+        window.addEventListener('scroll',function(){
+            var anime = document.querySelectorAll('.animeX');
+
+            for(var s = 0; s < anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+
+                if(animetop <windowheight - animepoint){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+
+
+
+
+        // filterable cards
+
+        let list =document.querySelectorAll('.list');
+        let card =document.querySelectorAll('.card');
+
+        for(let i = 0; i<list.length; i++){
+            list[i].addEventListener('click',function(){
+                for(let j=0; j<list.length; j++){
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for( let k=0; k<card.length; k++)
+                {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+        }
+    </script>
+    <!-- sticky navbar end -->
+</body>
+</html>
